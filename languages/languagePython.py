@@ -29,3 +29,19 @@ if __name__ == "__main__":
     sys.stdout = open('output.txt', 'w')
 
     pass
+
+
+## copy a list into another
+list_b = list_a.copy();
+
+## logical AND/OR/NOT
+
+#- a and b
+#- a or b
+#- not a
+
+## check if all passes a condition
+maxi = max(nums);
+        
+if all(maxi >= 2 * x for x in nums if x != maxi):
+    return nums.index(maxi)
