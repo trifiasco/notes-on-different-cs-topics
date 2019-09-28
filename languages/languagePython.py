@@ -1,4 +1,13 @@
+# two dimensional array
+array=[[0 for x in range(102)] for y in range(102)]
 
+# reverse a string
+string = "".join(reversed(string))
+string = string[::-1]
+
+# custom sort
+line.sort(key=lambda a: a[0], reverse=True)
+line.sort(key=functools.cmp_to_key(compare))
 
 if __name__ == "__main__":
     #take input while End of File
