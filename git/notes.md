@@ -1,5 +1,8 @@
 
 # Basic Commands
+- [how to set up ssh-key with multiple github account](https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/)
+- [multiple email address and gitconfig](https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same-computer)
+    - [one more link](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
 - `status` : git status
 - `add file` : git add `<fileName>`
 - `add all` : git add .
@@ -9,7 +12,11 @@
 - `push existing new repo into remote`:
 	- git remote add origin `<remote url>`
 	- git push -u origin master
+- `set remote url with ssh`:
+    - git remote set-url origin git@github.com-<ssh-hostname>:<username>/<repo_name>.git
 	
+- `clone a repository with ssh`:
+    - git clone git@github.com-<ssh-hostname>:<username>/repo_name.git
 - `pull`: git pull origin `<branch>` [--allow-unrelated-histories]
 - `renaming a repository` : https://help.github.com/en/articles/renaming-a-repository
 - `branching` : 
