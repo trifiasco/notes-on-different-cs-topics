@@ -30,4 +30,20 @@ Has capability of:
 
 #### Hands on - launching an EC2 instance
 
+#### Access EC2 using SSH
+- copy the public ip address(IPV4) from the aws console's ec2 instance
+- place the key file (.pem file) in the directory.
+- run `chmod 0400 <keyfile>.pem` >> makes the private key inaccessible
+- run - `ssh -i <keyfile>.pem ec2-user@<IPV4>` , here [ec2-user] is the user in the ec2 instance
+
+**PS-** In order to access the instance from `EC2 instance connect` from the browser, you need to have ssh configured and a port exposed. This is done while configuring or you can do it later from - 
+- go to security group > edit inbound rule > give a port(22) and source as `anywhere`.
+
+
+### Security Groups
+- fundamental of network security in aws.
+
+### Types of EC2 instances
+**Very Important for exam**
+
 
