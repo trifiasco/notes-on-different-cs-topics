@@ -3,6 +3,7 @@
 - [how to set up ssh-key with multiple github account](https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/)
 - [multiple email address and gitconfig](https://stackoverflow.com/questions/3860112/multiple-github-accounts-on-the-same-computer)
     - [one more link](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
+    - [one more link](https://mherman.org/blog/managing-multiple-github-accounts/)
 - `status` : git status
 - `add file` : git add `<fileName>`
 - `add all` : git add .
