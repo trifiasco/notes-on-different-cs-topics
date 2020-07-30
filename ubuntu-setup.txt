@@ -1,0 +1,112 @@
+ubuntu set up
+1. fix date fromat ( settings > region & language )
+2. fix iconsize, show on ( settings > Dock)
+3. add user to audio group - `sudo adduser <username> audio`
+4. power -> blank screen(never), auto suspend(off)
+5. install pavucontrol to fix audio.
+6. enable night light ( from settings > devices > displays > turn night light on)
+
+PPPoE/DSL connection set up
+1. nmcli con edit type pppoe con-name “YOUR_CONNECTION_NAME”
+2. set pppoe.username YOUR_DSL_ACCOUNT_USERNAME - provided by your isp (30mb)
+3. set pppoe.password YOUR_DSL_ACCOUNT_PASSWORD - provided by your isp (1500)
+4. save
+  this will save the connection.
+
+# Software update
+- update from software update
+- enable canonical partners from others tab
+- enable nvidia driver (if any)
+- enable additional repo
+
+# System Update
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt install build-essential
+- sudo apt install ubuntu-restricted-extras (** this installs supports for mp3, dvd playback, adobe flash plugin, codecs for common audio and video files)
+- sudo apt autoremove ( remove dependencies that no longer used by anything)
+
+** need to check diff between apt install & apt-get install
+
+# System settings
+- Gnome-tweaks - `sudo apt install gnome-tweaks` ( to run - `gnome tweaks`)
+- Enable click to minimize
+  - enable by running - `gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'`
+  - disable by running - `gsettings reset org.gnome.shell.extensions.dash-to-dock click-action`
+  
+  ## mac feel
+    - https://www.youtube.com/watch?v=AHzGYG2XvMI
+    - steps- 
+	1. download theme, icons(https://www.gnome-look.org/p/1102582). (mohave or catelina)
+	2. extract and then copy the  theme folder into a folder `/root/.themes` and icons folder into `/root/.icons`
+	3. open `gnome-tweaks` -> choose recetly downloaed theme from `application` dropdown and icons from `icons` dropdown.
+	4. update wallpaper
+
+# Softwares to install from software centers
+- vlc
+- chromium
+- skype
+- slack
+- vscode + vscode setup
+- sublime text + sublime text setup
+- qbittorrent
+
+# Other Softwares
+- guake
+```
+sudo apt-get install guake
+guake --version
+guake
+```
+
+- stacer
+```
+1. download latest release (.deb) from github repo release tab
+2. right click > open with software installer
+3. install
+```
+
+- google chrome
+```
+-> you can either do it with GUI or cmd - [follow it](https://itsfoss.com/install-chrome-ubuntu/)
+```
+
+# Dev environment setup
+  - python
+	- make sure python3 is there. otherwise install it - `sudo apt install python3`
+	- install pip - `sudo apt install python3-pip`
+	- install virtualenv - `pip3 install virtualenv`
+  - git
+	- install - `sudo ap install git`
+	- global config - `git config --global user.email "mail"` and `git config --global user.name "name"`
+	-- for ssh - 
+	```
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	cd ~/.ssh -> copy the .pub and paste it into gitlab/github
+	```
+  - nvm (node & beyond)
+	- Run following commands in that order
+	```
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+	export NVM_DIR="$HOME/.nvm"    
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+	
+	```
+	- download latest node - `nvm install node`
+	- Original [repo](https://github.com/nvm-sh/nvm)
+
+
+
+# Need to do
+- java
+- texmaker
+- docker
+- postman (https://medium.com/@chaudharypulkit93/installing-postman-on-ubuntu-the-right-way-3bed244b7e51)
+
+
+- tor
+- ngrok
+- zsh
+- dev setup
+
