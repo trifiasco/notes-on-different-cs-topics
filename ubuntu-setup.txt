@@ -96,6 +96,12 @@ guake
 	- download latest node - `nvm install node`
 	- Original [repo](https://github.com/nvm-sh/nvm)
 
+  - conda
+	- [installer download from here](https://docs.conda.io/en/latest/miniconda.html?fbclid=IwAR0ILF0cXeYqVfOyxT4ntw83LDltcAhrcMyFKSxA67SxQxdFI4_r7C90Nic)
+	- [installation instruction](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
+		- `bash Miniconda3-latest-Linux-x86_64.sh`
+		- after installation - `source .bashrc`
+
 
 
 # Need to do
