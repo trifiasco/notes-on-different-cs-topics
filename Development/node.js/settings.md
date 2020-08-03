@@ -104,3 +104,9 @@ npm install --save-dev @babel/plugin-transform-runtime
 9. add an `.npmignore` and include `/src`
 10. add `/lib` to `.gitignore`
 11. update entry point - `"main" : "lib/index.js"`
+
+
+### TDD with mocha-chai
+1. Add mocha-chai - `npm i mocha chai --save-dev`
+2. Add @babel/register - `npm i --save-dev @babel/register`
+3. Add test script - `"test": "mocha --require @babel/register --watch --reporter spec tests/ --exec babel-node"`
